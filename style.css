@@ -1,0 +1,88 @@
+body {
+    background-color: #0047AB;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 25px;
+    font-weight: 250;
+}
+.todo-wrapper h2 {
+    margin: 0;
+}
+.todo-wrapper p {
+    font-style: italic;
+    color:cadetblue;
+    margin: 5px;
+}
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    transition: all 0.5s ease-out;
+}
+.todo-wrapper ol li:nth-child(even){
+    background:#ddd;
+}
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color:aqua;
+}
+.todo-wrapper form {
+    display:inline-block;
+}
+.todo-wrapper input{
+    padding: 3px 5px;
+}
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.todo-wrapper .pretty-button {
+    margin: 10px 2px;
+    color:aliceblue;
+    background-color: #0047AB;
+    border-radius: 5px;
+    padding: 5px 7px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+#control-wrapper{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.todo-wrapper #clear-button{
+    background-color: brown;
+}
+.todo-wrapper #empety-button{
+    background-color: blueviolet;
+}
+.todo-wrapper #save-button {
+    background-color: chartreuse;
+}
+@media only screen and (min-widht:1400px) {
+    .todo-wrapper{
+        width: 600px;
+    }
+    .todo-wrapper input{
+        width: 600px;
+    }
+}
+@media only screen and (max-widht:1399px) and (min-widht:750px) {
+    .todo-wrapper{
+        width: 75%;
+    }
+    .todo-wrapper input{
+        width: 400px;
+    }
+}
